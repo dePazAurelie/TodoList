@@ -1,0 +1,29 @@
+<div class="card-action center-align">
+  <p>New To-do :</p>
+
+  <div class="row">
+    {{input value=new type="text" class="col s11" id="new" addNewTOdo="newTodo"}}
+    <div class="col s1">
+      <a class="btn-floating red accent-1" id="id_button"{{action "addClicked"}}><i class="material-icons">add</i></a>
+    </div>
+  </div>
+</div>
+<ul class="collection">
+  {{#each todos as |todo|}}
+    <li class="collection-item">
+      <div>
+        <span class="">{{todo.id}}.</span> {{todo.text}}
+        <a href="#" class="secondary-content">
+          <i class="material-icons" id="edit">
+            edit
+          </i>
+        </a>
+        <a href="#" class="secondary-content" id="delete">
+          <i class="material-icons">
+            delete
+          </i>
+        </a>
+      </div>
+    </li>
+  {{/each}}
+</ul>
