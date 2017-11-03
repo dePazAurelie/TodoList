@@ -1,10 +1,6 @@
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 
-/**
- * @author sheol on 9/26/17 at 4:47 PM
- * @project SpringRestStarter
- */
 public class MongoSingleton {
     private static MongoSingleton instance = new MongoSingleton();
     private MongoClient mongoClient;

@@ -1,0 +1,6 @@
+{
+  "name": "ember-test",
+  "dependencies": {
+    "materialize": "^0.100.2"
+  }
+}
